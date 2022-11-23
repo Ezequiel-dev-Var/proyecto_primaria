@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style-login.css">
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1d22e229bb.js" crossorigin="anonymous"></script>
+    <title>Primaria</title>
+</head>
+<body>
+
+
+    <div class="login-container">
+        <div class="login-info-container">
+            <!-- <h1 class="title">Registrarse con</h1>
+            <div class="social-login">
+
+                <div class="social-login-element">
+                    <img src="IMG/buscar.png" alt="google-image">
+                    <a href="https://accounts.google.com/AccountChooser/signinchooser?service=mail&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&flowName=GlifWebSignIn&flowEntry=AccountChooser" target="_blank">Google</a>
+                </div>
+
+                <div class="social-login-element">
+                    <img src="IMG/facebook.png" alt="facebook-image">
+                    <a href="https://es-la.facebook.com/" target="_blank">Facebook</a>
+                </div>
+            </div>
+            <p>o</p> -->
+            <form action="controller/validar.php" class="inputs-container" method="POST">
+
+                <input class="input" type="email" name="correo" placeholder="Correo Electrónico" required>
+
+                <input class="input" type="password" name="contraseña" placeholder="Contraseña"required>
+
+                <p> ¿Olvidaste tu Contraseña? <a href="#"class="a">Haz Click Aqui</a> </p> 
+
+                <button type="submit" class="btn" name="ingresar">Entrar</button> 
+
+                <p>¿No tienes una cuenta? <a href="register.html" class="a">Registrate Aqui</a></p>
+            </form>
+            
+        </div>
+        <img class="image-container" src="IMG/img.jpg" alt="login-image">
+    </div>
+    
+</body>

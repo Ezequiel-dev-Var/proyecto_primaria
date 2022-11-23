@@ -1,0 +1,75 @@
+<?php
+session_start();
+$usuario=$_SESSION['correo'];
+echo"<h1>BIENVENIDO $usuario</h1>";
+?>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1d22e229bb.js" crossorigin="anonymous"></script>
+    <title>Primaria</title>
+</head>
+<body>
+    <header>
+        <a href="" class="logo">
+            Primaria
+        </a>
+
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar" class="fa fa-bars"></label>
+        <nav class="navbar">
+            <a href="main.php">inicio</a>
+            <a href="seguimiento.html">seguimiento</a>
+            <a href="#ayuda">ayuda</a>
+            <div class="user-btn-responsive">
+                <a href="perfil-usuario.html"><img src="../IMG/user (1).png" alt="user btn"></a>
+            </div>
+        </nav>
+
+        <div class="user-btn">
+            <a href="perfil-usuario.html"><img src="../IMG/user (1).png" alt="user btn"></a>
+        </div>
+    </header>
+
+    <!-- cambiar el href a archivos por crear todavia -->
+
+    <section class="seguimiento" id="seguimiento">
+        <h1 class="heading"> SEGUIMIENTO </h1>
+        <div class="caja-contenedor">
+            <div class="caja">
+                <img src="../IMG/Education-rafiki.png" alt="">
+                <H3>1er Año</H3>
+    
+                <a href="admin.php" class="btn">VER MAS</a> 
+            </div>
+        
+            <div class="caja">
+                <img src="../IMG/Folder-rafiki.png" alt="">
+                <H3>2do Año</H3>
+        
+                <a href="carga_de_notas.php" class="btn">VER MAS</a> 
+            </div>
+        
+            <div class="caja">
+                <img src="../IMG/Learning-rafiki.png" alt="">
+                <H3>3er Año</H3>
+        
+                <a href="equivalencias.php" class="btn">VER MAS</a>
+            </div>
+    
+            <div class="caja">
+                <img src="../IMG/Happy student-rafiki.png" alt="">
+                <H3>4to Año</H3>
+        
+                <a href="asistencia.html" class="btn">VER MAS</a>
+            </div>
+         </div>
+    </section>
+
+</body>
